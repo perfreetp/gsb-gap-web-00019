@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>GAP 培训考核一体化平台</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="login-view" class="login-wrap">
+  <div class="login-card">
+    <div class="brand"><span class="logo">本草</span>
+      <h1>GAP 培训考核一体化平台</h1>
+      <p>中药材种植基地 · 培训 · 考核 · 持证追溯</p>
+    </div>
+    <form id="login-form">
+      <label>账号<input name="username" autocomplete="username" placeholder="请输入账号" required></label>
+      <label>密码<input name="password" type="password" autocomplete="current-password" placeholder="请输入密码" required></label>
+      <button class="btn primary block" type="submit">登 录</button>
+    </form>
+    <div class="demo-accounts">
+      <p class="muted">演示账号（密码同账号+123）</p>
+      <div class="chips" id="demo-chips"></div>
+    </div>
+  </div>
+</div>
+
+<div id="app-view" class="app-wrap" hidden>
+  <header class="topbar">
+    <div class="top-left">
+      <span class="logo sm">本草</span>
+      <div class="top-title"><b id="top-title">工作台</b><small id="top-sub"></small></div>
+    </div>
+    <div class="top-right">
+      <button class="btn ghost" id="bell-btn">🔔<span class="badge" id="bell-badge" hidden></span></button>
+      <span id="who" class="muted"></span>
+      <button class="btn ghost" id="logout-btn">退出</button>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="content" id="content"></main>
+  </div>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast" class="toast" hidden></div>
+<script src="/core.js"></script>
+<script src="/pages/dashboard.js"></script>
+<script src="/pages/workers.js"></script>
+<script src="/pages/plots.js"></script>
+<script src="/pages/training.js"></script>
+<script src="/pages/courses.js"></script>
+<script src="/pages/exams-manage.js"></script>
+<script src="/pages/exam-taking.js"></script>
+<script src="/pages/review.js"></script>
+<script src="/pages/certificates.js"></script>
+<script src="/pages/harvest.js"></script>
+<script src="/pages/stats.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "gap-training-platform",
+  "version": "1.0.0",
+  "description": "中药材 GAP 培训考核一体化平台",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/seed.js"
+  }
+}
