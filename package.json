@@ -1,0 +1,32 @@
+{
+  "name": "b",
+  "version": "1.0.0",
+  "description": "开发一个面向中药材种植基地与饮片企业的 GAP 培训考核一体化 Web 平台",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/seed.js",
+    "test:api": "node scripts-test.js && node scripts-test-grading.js",
+    "test:e2e": "node e2e-browser.js",
+    "reset-db": "node -e \"const fs=require('fs');['server/gap.db','server/gap.db-wal','server/gap.db-shm'].forEach(f=>{try{fs.unlinkSync(f)}catch(e){}})\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perfreetp/gsb-gap-web-00019.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/perfreetp/gsb-gap-web-00019/issues"
+  },
+  "homepage": "https://github.com/perfreetp/gsb-gap-web-00019#readme",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.11.0"
+  }
+}

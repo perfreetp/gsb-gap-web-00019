@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAP 培训考核一体化平台</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div id="login-view" class="login-wrap hidden">
+    <form id="login-form" class="login-card">
+      <div class="brand"><span class="leaf">🌿</span>
+        <div><h1>GAP 培训考核平台</h1><p>中药材种植基地 · 培训-考核-持证-采收一体化</p></div>
+      </div>
+      <label>用户名<input name="username" autocomplete="username" value="admin" required></label>
+      <label>密码<input name="password" type="password" autocomplete="current-password" value="123456" required></label>
+      <button class="btn primary" type="submit">登 录</button>
+      <div class="demo-hint">
+        演示账号（密码均 123456）：<br>
+        企业质控 <code>qiye</code> · 基地管理员 <code>admin</code> · 技术员 <code>tech</code> · 药农 <code>farmer</code>
+      </div>
+    </form>
+  </div>
+
+  <div id="app-view" class="app hidden">
+    <aside class="sidebar">
+      <div class="logo">🌿 GAP 平台</div>
+      <nav id="nav"></nav>
+      <div class="sidebar-foot">
+        <div id="who" class="who"></div>
+        <button id="logout" class="btn ghost small">退出登录</button>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div id="page-title" class="page-title"></div>
+        <div class="top-actions">
+          <span id="net-dot" class="net-dot online" title="联网状态"></span>
+          <button id="bell" class="btn ghost small">🔔 <span id="unread" class="badge hidden">0</span></button>
+        </div>
+      </header>
+      <div id="view" class="view"></div>
+    </main>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+  <div id="modal-root"></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

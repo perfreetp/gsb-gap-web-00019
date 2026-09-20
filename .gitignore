@@ -1,0 +1,5 @@
+node_modules/
+server/gap.db
+server/gap.db-wal
+server/gap.db-shm
+*.log
